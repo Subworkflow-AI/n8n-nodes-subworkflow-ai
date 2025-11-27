@@ -28,11 +28,11 @@ export const workspaceVectorizeDescription: INodeProperties[] = [
         },
         options: [
             {
-                displayName: 'Wait For completion',
+                displayName: 'Wait For Completion',
                 name: 'waitForCompletion',
                 type: 'boolean',
                 default: true,
-                description: 'Whether to wait for completion of the job.',
+                description: 'Whether to wait for completion of the job',
             },
             {
                 displayName: 'Poll Timeout',
@@ -42,7 +42,7 @@ export const workspaceVectorizeDescription: INodeProperties[] = [
                 description: 'Maximum wait time if waiting for completion',
             },
             {
-                displayName: 'Dataset Expiry (days)',
+                displayName: 'Dataset Expiry (Days)',
                 name: 'expiresInDays',
                 type: 'number',
                 typeOptions: { minValue: -1 },

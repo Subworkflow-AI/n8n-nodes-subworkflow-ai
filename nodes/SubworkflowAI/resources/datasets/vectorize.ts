@@ -22,11 +22,11 @@ export const datasetsVectorizeDescription: INodeProperties[] = [
         },
         options: [
             {
-                displayName: 'Wait For completion',
+                displayName: 'Wait For Completion',
                 name: 'waitForCompletion',
                 type: 'boolean',
                 default: true,
-                description: 'Whether to wait for completion of the job.',
+                description: 'Whether to wait for completion of the job',
             },
             {
                 displayName: 'Poll Timeout',

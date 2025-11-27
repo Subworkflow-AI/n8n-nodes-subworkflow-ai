@@ -70,7 +70,7 @@ export const datasetsGetManyDescription: INodeProperties[] = [
 				typeOptions: {
 					minValue: 60
 				},
-				default: 600,
+				default: '',
 				description: 'The expiry duration in seconds for the dataset file share link',
 			},
         ]

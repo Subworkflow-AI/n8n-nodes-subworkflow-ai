@@ -15,17 +15,17 @@ export const workspaceSearchDescription: INodeProperties[] = [
             show: showOnlyForWorkspaceSearch,
         },
         default: '',
-        description: 'Search query text to use for this search.',
+        description: 'Search query text to use for this search',
     },
     {
-        displayName: 'Query Image URL (optional)',
+        displayName: 'Query Image URL (Optional)',
         name: 'queryImage',
         type: 'string',
         displayOptions: {
             show: showOnlyForWorkspaceSearch,
         },
         default: '',
-        description: 'Optional image URL to use as part of the search.'
+        description: 'Optional image URL to use as part of the search'
     },
     {
         displayName: 'Limit',
@@ -41,7 +41,7 @@ export const workspaceSearchDescription: INodeProperties[] = [
             minValue: 1,
             maxValue: 100,
         },
-        default: 5,
+        default: 50,
         description: 'Max number of results to return',
     },
     {

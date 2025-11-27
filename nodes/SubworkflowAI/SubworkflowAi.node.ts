@@ -233,10 +233,10 @@ const createForm = (values: {
     opts?: Record<string,string>
 }[]) => {
     if (typeof FormData === 'undefined') {
-        throw new Error('FormData is not supported in this runtime environment');
+        throw 'FormData is not supported in this runtime environment';
     }
     if (typeof Blob === 'undefined') {
-        throw new Error('Blob is not supported in this runtime environment');
+        throw 'Blob is not supported in this runtime environment';
     }
     const form = new FormData();
     values.forEach(item => {

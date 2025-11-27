@@ -22,9 +22,9 @@ export const datasetsGetItemsDescription: INodeProperties[] = [
             show: showOnlyForDatasetsGetItems
         },
         options: [
-            { name: 'pdf', value: 'pdf' },
+            { name: 'Pdf', value: 'pdf' },
             { name: 'jpg', value: 'jpg' },
-            { name: 'embedding_image', value: 'embedding_image' }
+            { name: 'Embedding_image', value: 'embedding_image' }
         ],
         default: 'pdf',
         description: 'Page format. eg. "pdf" or "jpg"',
@@ -103,7 +103,7 @@ export const datasetsGetItemsDescription: INodeProperties[] = [
 				typeOptions: {
 					minValue: 60
 				},
-				default: 600,
+				default: '',
 				description: 'The expiry duration in seconds for the dataset file share link',
 			},
         ]
