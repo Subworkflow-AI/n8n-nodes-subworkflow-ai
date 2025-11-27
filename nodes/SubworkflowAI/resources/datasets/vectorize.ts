@@ -1,0 +1,40 @@
+import type { INodeProperties } from 'n8n-workflow';
+import { datasetSelect } from '../../shared/descriptions';
+
+const showOnlyForDatasetsVectorize = {
+    operation: ['vectorize'],
+    resource: ['datasets'],
+};
+
+export const datasetsVectorizeDescription: INodeProperties[] = [
+    {
+        ...datasetSelect,
+        displayOptions: { show: showOnlyForDatasetsVectorize },
+    },
+    {
+        displayName: 'Options',
+        name: 'options',
+        type: 'collection',
+        placeholder: 'Add option',
+        default: {},
+        displayOptions: {
+            show: showOnlyForDatasetsVectorize
+        },
+        options: [
+            {
+                displayName: 'Wait For completion',
+                name: 'waitForCompletion',
+                type: 'boolean',
+                default: true,
+                description: 'Whether to wait for completion of the job.',
+            },
+            {
+                displayName: 'Poll Timeout',
+                name: 'pollTimeout',
+                type: 'number',
+                default: 600,
+                description: 'Maximum wait time if waiting for completion',
+            }
+        ]
+    }
+];
