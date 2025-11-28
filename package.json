@@ -39,7 +39,7 @@
             "dist/credentials/SubworkflowAIApi.credentials.js"
         ],
         "nodes": [
-            "dist/nodes/SubworkflowAI/SubworkflowAI.node.js"
+            "dist/nodes/SubworkflowAI/SubworkflowAi.node.js"
         ]
     },
     "devDependencies": {
