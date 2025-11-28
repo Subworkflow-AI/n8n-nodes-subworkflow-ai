@@ -15,14 +15,14 @@ import { datasetsDescription } from './resources/datasets';
 import { jobsDescription } from './resources/jobs';
 
 const SUBWORKFLOWAI_API_BASE_URL = 'https://api.subworkflow.ai/v1';
-const CREDENTIAL_NAME = 'subworkflowAIApi';
+const CREDENTIAL_NAME = 'subworkflowAiApi';
 
-export class SubworkflowAI implements INodeType {
+export class SubworkflowAi implements INodeType {
     description: INodeTypeDescription = {
         displayName: 'SubworkflowAI',
         name: 'subworkflowAi',
         icon: { light: 'file:../../icons/subworkflow-ai.svg', dark: 'file:../../icons/subworkflow-ai.dark.svg' },
-        group: ['output'],
+        group: ['transform'],
         version: 1,
         subtitle: '={{$parameter["operation"] + ": " + $parameter["resource"]}}',
         description: 'Document Processing with SubworkflowAI API',

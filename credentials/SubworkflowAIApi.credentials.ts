@@ -6,8 +6,8 @@ import type {
 	INodeProperties,
 } from 'n8n-workflow';
 
-export class SubworkflowAIApi implements ICredentialType {
-	name = 'subworkflowAIApi';
+export class SubworkflowAiApi implements ICredentialType {
+	name = 'subworkflowAiApi';
 
 	displayName = 'SubworkflowAI API';
 

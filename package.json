@@ -20,6 +20,7 @@
         "type": "git",
         "url": "https://github.com/subworkflow-ai/n8n-nodes-subworkflow-ai.git"
     },
+    "main": "index.js",
     "scripts": {
         "build": "n8n-node build",
         "build:watch": "tsc --watch",
@@ -36,7 +37,7 @@
         "n8nNodesApiVersion": 1,
         "strict": true,
         "credentials": [
-            "dist/credentials/SubworkflowAIApi.credentials.js"
+            "dist/credentials/SubworkflowAiApi.credentials.js"
         ],
         "nodes": [
             "dist/nodes/SubworkflowAI/SubworkflowAi.node.js"
