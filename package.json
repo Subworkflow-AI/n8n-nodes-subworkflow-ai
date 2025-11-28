@@ -1,6 +1,6 @@
 {
     "name": "n8n-nodes-subworkflow-ai",
-    "version": "0.1.1",
+    "version": "0.1.2",
     "description": "Official n8n node for Subworkflow.ai",
     "license": "MIT",
     "homepage": "https://subworkflow.ai",
